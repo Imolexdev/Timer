@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Simple Timer</title>
+</head>
+<body>
+  <div class="toggle-container">
+    <span class="toggle-label">Dark Mode</span>
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()">
+      <span class="slider round"></span>
+    </label>
+  </div>
+  <div class="timer">
+    <div id="display">00:00:00</div>
+    <button id="startBtn" onclick="startTimer()">Start</button>
+    <button id="stopBtn" onclick="stopTimer()">Stop</button>
+    <button id="resetBtn" onclick="resetTimer()">Reset</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
